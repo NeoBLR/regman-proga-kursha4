@@ -1,4 +1,4 @@
-import NavBar from '../Components/NavBar'
+import NavBar from '../Components/NavBar.js'
 import { useRef, useEffect } from 'react'
 
 export default function Layout({ children }) {
