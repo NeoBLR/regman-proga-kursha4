@@ -45,24 +45,15 @@ export default function Home() {
                 Page
               </motion.div>
             </Heading>
-
-            <motion.div
-              initial={{ y: 100, opacity: 0 }}
-              animate={{
-                y: 0,
-                opacity: 1,
-                transition: { delay: 1 },
-              }}>
-              <Heading
-                className={styles.side__Heading}
-                textAlign='center'
-                fontWeight='thin'
-                fontSize={styles.side__Heading}
-                data-scroll
-                data-scroll-speed='1'>
-                Добро пожаловать на мой сайт!
-              </Heading>
-            </motion.div>
+            <Heading
+              className={styles.side__Heading}
+              textAlign='center'
+              fontWeight='thin'
+              fontSize={styles.side__Heading}
+              data-scroll
+              data-scroll-speed='1'>
+              Добро пожаловать на мой сайт!
+            </Heading>
           </Stack>
         </Center>
 

@@ -17,6 +17,7 @@ import {
 import NextLink from 'next/link'
 
 import { MoonIcon, SunIcon, CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
+import { motion } from 'framer-motion'
 
 const Menu = () => {
   return (
@@ -49,12 +50,18 @@ export default function NavBar() {
       w='100%'
       data-scroll
       data-scroll-sticky
-      data-scroll-target='body'>
+      data-scroll-target='.main'>
       <Stack w='100%' h='100%'>
         <Flex w='100%'>
-          <Heading p='1rem' color='white'>
-            Logo
-          </Heading>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 1.2 }}>
+            <NextLink href='/'>
+              <Link>
+                <Heading p='1rem' color='white'>
+                  Logo
+                </Heading>
+              </Link>
+            </NextLink>
+          </motion.div>
 
           <Box
             flex='1'
@@ -65,6 +72,14 @@ export default function NavBar() {
           </Box>
 
           <Flex flex='1' display={['flex', 'flex', 'none']}></Flex>
+
+          <Flex justifyContent='flex-end'>
+            <NextLink href='/login'>
+              <Button m='1rem' colorScheme='teal'>
+                Войти
+              </Button>
+            </NextLink>
+          </Flex>
 
           <Flex justifyContent='flex-end'>
             <IconButton
