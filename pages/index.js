@@ -2,7 +2,7 @@ import { Center, Heading, Stack, Flex } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import Head from 'next/head'
 import Image from 'next/image'
-import Layout from '../components/layout/layout.js'
+import Layout from '../components/layout/Layout.js'
 import styles from '../sass/Home.module.sass'
 
 export default function Home() {
