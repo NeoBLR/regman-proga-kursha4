@@ -12,7 +12,7 @@ import {
   Link,
 } from '@chakra-ui/react'
 
-// import styles from '../sass/NavBar.module.sass'
+// / import styles from '../sass/NavBar.module.sass'
 
 import NextLink from 'next/link'
 
